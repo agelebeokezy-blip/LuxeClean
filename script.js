@@ -26,13 +26,13 @@ window.addEventListener("load", ()=>{
     navli.forEach((nav) =>{
         setTimeout(() => {
         nav.classList.toggle("show")
-    }, 5000);
+    }, 3000);
     })
 
     subnavli.forEach((subnav) =>{
         setTimeout(() => {
         subnav.classList.toggle("show")
-    }, 5000);
+    }, 3000);
     })
 
 });
