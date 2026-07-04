@@ -100,6 +100,7 @@ span{
     flex-direction: column;
     transition: 0.25s;
     cursor: pointer;
+    /* align-items: center; */
 }
 
 .Service-con{
@@ -451,6 +452,7 @@ h1 span:nth-child(20){
     padding: 10px;
     border-radius: 10px;
     background: linear-gradient(-90deg, rgba(89, 92, 67, 0.292), rgba(195, 204, 62, 0.2) );
+    cursor: pointer;
 }
 
 .Our-services-grid-section .grid-items img{
@@ -645,16 +647,17 @@ h1 span:nth-child(20){
 .partners-container{
     display: flex;
     width: 70vw;
-    /* overflow: auto; */
     height: 25vh;
-    gap: 0.5vw;
+    gap: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 2rem;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
     transition: 0.25s;
-    padding-left: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
 }
 
 .partners-container::-webkit-scrollbar{
@@ -665,14 +668,13 @@ h1 span:nth-child(20){
     flex-shrink: 0;
     height: 95%;
     width: 22.69vw;
-    box-shadow: 0px 15px 5px rgba(0,0,0,0.6);
+    box-shadow: 10px 10px 5px 2px rgba(0,0,0,0.4);
     border-radius: 20px;
     animation: scroll-left;
     animation-timing-function: ease-in-out;
-    animation-duration: 12s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     scroll-snap-align: start;
-    transform: translateX(-105%)
 }
 
 .partners img{
@@ -681,25 +683,25 @@ h1 span:nth-child(20){
 
 @keyframes scroll-left {
   0% {
-    transform: translateX(4px);
+    transform: translateX(0px);
   }
   16.67% {
-    transform: translateX(-23vw); 
+    transform: translateX(calc(-22.69vw - 20px)); 
   }
    33.34% {
-    transform: translateX(-46vw); 
+    transform: translateX(calc(-45.38vw - 40px)); 
   }
    50.01% {
-    transform: translateX(-69vw); 
+    transform: translateX(calc(-68.07vw - 60px)); 
   }
    66.68% {
-    transform: translateX(-91vw); 
+    transform: translateX(calc(-90.76vw - 80px)); 
   }
    83.35% {
-    transform: translateX(-114vw); 
+    transform: translateX(calc(-113.45vw - 100px)); 
   }
    100% {
-    transform: translateX(-137vw); 
+    transform: translateX(calc(-136.14vw - 120px)); 
   }
 }
 
@@ -947,7 +949,7 @@ h1 span:nth-child(20){
     font-size: 1vw;
     background: linear-gradient(45deg, rgb(232, 233, 227), rgb(139, 145, 139) );
     font-weight: bolder;
-    transition: 1.2s;
+    transition: 0.25s;
     letter-spacing: 1.5px;
     box-shadow: 5px 10px 10px rgba(0,0,0,0.6);
 }
@@ -1115,4 +1117,26 @@ h1 span:nth-child(20){
     border: 1px solid black;
     border-radius: 10px;
     padding: 20px;
+}
+
+/* Landscaping Section */
+
+.landscaping-section-intro{
+    width: 100vw;
+    justify-self: center;
+    justify-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: linear-gradient(180deg, rgba(6, 73, 97, 0.1), rgba(195, 204, 62, 0.2));
+}
+
+.landscaping-section-intro h1{
+    margin-bottom: 2rem;
+    color: rgb(170, 150, 35);
+}
+
+.landscaping-section-intro p{
+    text-align: center;
+    font-weight: bold;
+    width: 70vw;
 }

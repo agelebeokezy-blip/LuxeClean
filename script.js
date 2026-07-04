@@ -87,15 +87,3 @@ leftbtn.addEventListener("click", () => {
     });
   });
 });
-
-//  partner section scroll
-
-const partnerbox = document.querySelector(".partners-container")
-const partner = document.querySelector(".partner")
-
-window.addEventListener("load", () =>{
-  partnerbox.scrollBy({
-    left : partnerbox.clientWidth,
-    behavior: "smooth"
-  });
-});
